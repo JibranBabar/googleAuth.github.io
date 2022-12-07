@@ -19,7 +19,7 @@ const user_callback = (
 const login_success = (req , res) => {
     if (req.isAuthenticated()) {
         res.writeHead(301, {
-            Location: f_URL + "/index.html",
+            Location: f_URL + "/task_list.html",
             }).end();
         }
     }
