@@ -25,14 +25,14 @@ const login_success = (req , res) => {
     }
 const login_failed = (req , res) => {
     res.writeHead(301, {
-        Location: f_URL + "/auth_index.html",
+        Location: f_URL + "/index.html",
     })
 }
 const user_logout = (req , res) => {
     req.session.destroy();
   // res.send({"status" : "Success" , "message" : "logout successfully"})
     res.writeHead(301, {
-        Location: f_URL + "/auth_index.html",
+        Location: f_URL + "/index.html",
     }).end();
     req.logout();
 }
